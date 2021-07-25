@@ -1,15 +1,16 @@
-var sky1 = new SkySphere('sky1', 
-{ width: window.innerWidth, height: 1000, 
+var sky1 = new SkySphere('sky1', { 
+width: window.innerWidth, height: 1000, 
 customOnClick: function (data) { 
-  alert(data.info); }, 
+alert(data.info); 
+}, 
 getObjectText: function (data) { 
   return data.name; }, 
   font: '24px serif', 
   highlightColor: '#33bbff' }); 
 
 
-var M42 = sky1.addCustomObject(5.58814, -4.92319, 
-  {name: 'M42 diffuse nebula', 
+var M42 = sky1.addCustomObject(5.58814, -4.92319, {
+  name: 'M42 diffuse nebula', 
   info: 'The Orion Nebula', 
   color:'#ffc0cb',
   radius: 10}); 
@@ -19,7 +20,8 @@ var casa = sky1.addCustomObject(23.38, 58.80,
   info: 'Our type IIb supernova', 
   color:'#fc0fc0',
   radius: 10}); 
-  sky1.drawSky(); 
+
+sky1.drawSky(); 
 
 document.getElementById('center_casa').addEventListener('click', 
   function () { 
