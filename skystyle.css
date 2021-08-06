@@ -1,10 +1,14 @@
-body { 
-  margin: 0; 
-  padding: 0; 
+body{ 
+  margin:0; 
+  padding:0; 
   }
-button:active{ background-color:red; } 
-button:focus{ background-color:red; }
-#sky1 { 
+button:active{ 
+background-color:red; 
+} 
+button:focus{ 
+background-color:red; 
+}
+#sky1{ 
 overflow: hidden; 
 border: 1px #ddd solid; 
 background-color: #222; 
@@ -14,4 +18,5 @@ margin: 0;
 font-size:36px;
 background-color:black;
 color:white;
-border-radius:25px;}
+border-radius:25px;
+}
